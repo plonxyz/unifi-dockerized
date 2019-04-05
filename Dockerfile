@@ -22,7 +22,6 @@ RUN \
 USER ubnt	
 # add local files
 WORKDIR /UniFi/
-COPY system.properties /data/system.properties
 # Volumes and Ports
 #VOLUME /config
 ENTRYPOINT [ "/usr/bin/java",  "-Xmx1024M",  "-jar","/UniFi/lib/ace.jar","start"]
